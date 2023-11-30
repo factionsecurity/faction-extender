@@ -1,8 +1,8 @@
-package com.fuse.elements;
+package com.faction.elements;
 
 
 
-public class Campaign extends com.fuse.interfaces._Campaign{
+public class Campaign extends com.faction.interfaces._Campaign{
 	
 
 	private Long id;

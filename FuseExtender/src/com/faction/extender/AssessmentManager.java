@@ -1,9 +1,9 @@
-package com.fuse.extender;
+package com.faction.extender;
 
 import java.util.List;
 
-import com.fuse.elements.Assessment;
-import com.fuse.elements.Vulnerability;
+import com.faction.elements.Assessment;
+import com.faction.elements.Vulnerability;
 
 
 public interface AssessmentManager {
@@ -13,7 +13,7 @@ public interface AssessmentManager {
 	
 	
 	/**
-	 * This function allows you to upate other interfaces when the command is run. This can also up
+	 * This function allows you to update other interfaces when the command is run. This can also up
 	 * 
 	 * 
 	 * @param asmt is the Current assessment

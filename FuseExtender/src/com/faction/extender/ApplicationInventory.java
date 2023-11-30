@@ -1,11 +1,11 @@
-package com.fuse.extender;
+package com.faction.extender;
 
 
 
 public interface ApplicationInventory {
 	
 	/**
-	 * This is an interface for the FuseSoft API that allows
+	 * This is an interface for the Faction API that allows
 	 * Developers to create their own integrations with other
 	 * systems. 
 	 * 

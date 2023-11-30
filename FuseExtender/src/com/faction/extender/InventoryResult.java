@@ -1,4 +1,4 @@
-package com.fuse.extender;
+package com.faction.extender;
 
 import java.util.HashMap;
 

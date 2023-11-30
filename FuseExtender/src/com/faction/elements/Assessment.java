@@ -1,11 +1,12 @@
-package com.fuse.elements;
+package com.faction.elements;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
-import com.fuse.elements.User;
+
+import com.faction.elements.User;
 public class Assessment{
 
 	
@@ -29,6 +30,7 @@ public class Assessment{
 	private String pr_risk_notes;
 	private String status;
 	private Integer workflow;
+	private List<CustomField> customFields; 
 
 
 		
@@ -172,6 +174,13 @@ public class Assessment{
 
 	public void setWorkflow(Integer workflow) {
 		this.workflow = workflow;
+	}
+	public void setCustomFields( List<CustomField> fields) {
+		this.customFields = fields;
+	}
+	
+	public List<CustomField> getCustomFields(){
+		return this.customFields;
 	}
 	
 	

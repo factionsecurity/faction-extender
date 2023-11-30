@@ -1,4 +1,4 @@
-package com.fuse.elements;
+package com.faction.elements;
 
 
 public class CustomType {

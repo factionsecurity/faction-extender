@@ -1,11 +1,11 @@
-package com.fuse.extender;
+package com.faction.extender;
 
 import java.util.Date;
 
-import com.fuse.elements.Assessment;
-import com.fuse.elements.User;
-import com.fuse.elements.Vulnerability;
-import com.fuse.extender.AssessmentManager.Operation;
+import com.faction.elements.Assessment;
+import com.faction.elements.User;
+import com.faction.elements.Vulnerability;
+import com.faction.extender.AssessmentManager.Operation;
 
 public interface VerificationManager {
 	static public enum Operation { Cancel, PASS,FAIL,Assigned};

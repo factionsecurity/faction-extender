@@ -1,4 +1,4 @@
-package com.fuse.interfaces;
+package com.faction.interfaces;
 
 import java.util.Date;
 import java.util.List;
