@@ -1,4 +1,43 @@
 # faction-extender
-Faction has the ability to extend its functionality on the server side. If you are familiar with writing BurpSuite extensions then this process should be somewhat familiar to you. If you are not it’s OK . We will walk through the specifics below.
+Faction has the ability to extend its functionality on the server side. More information about creating a Faction plugin can be found here: https://www.factionsecurity.com/project/extending-faction/
 
-This has been recently updated. Developer instructions are comming soon.
+### To include the Extendar API in your project, add the following sections to your pom.xml
+
+```
+<repositories>
+  <repository>
+    <id>FactionExtender</id>
+    <url>https://github.com/factionsecurity/faction-extender/raw/mvn-repo/</url>
+    <snapshots>
+      <enabled>true</enabled>
+      <updatePolicy>always</updatePolicy>
+    </snapshots>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>FactionExtender</groupId>
+    <artifactId>FactionExtender</artifactId>
+    <version>1.1</version>
+  </dependency>
+</dependencies>
+
+<build>
+  <plugins>
+    <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <configuration>
+        <descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+        <archive> 
+          <manifestEntries>
+            <Import-Library>org.faction.JiraPlugin</Import-Library>
+          </manifestEntries>
+        </archive>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+```
