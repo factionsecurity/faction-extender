@@ -1,4 +1,8 @@
 # faction-extender
+
+> [!IMPORTANT]
+> This repo is being archived. Use [this Faction Extender](https://github.com/factionsecurity/FactionExtender) moving forward.
+
 Faction has the ability to extend its functionality on the server side. More information about creating a Faction plugin can be found here: https://www.factionsecurity.com/project/extending-faction/
 
 ### To include the Extendar API in your project, add the following sections to your pom.xml
